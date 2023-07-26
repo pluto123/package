@@ -35,4 +35,14 @@ public class ThymeleafController {
 
         return "modelAttribute";
     }
+
+    @GetMapping("/link")
+    public String link(ModelMap modelMap) {
+        modelMap.addAttribute("message", "Hello Link");
+        modelMap.addAttribute("urlName", "Google");
+        modelMap.addAttribute("url", "https://www.google.com.tw/");
+        modelMap.addAttribute("localUrlName", "model");
+        modelMap.addAttribute("localUrl", "model");
+        return "link";
+    }
 }
