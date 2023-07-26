@@ -2,6 +2,10 @@
 <html lang="en" xmlns:th="https://www.thymeleaf.org">
 <head>
     <meta charset="UTF-8">
+    <script th:inline="javascript">
+	var message = [[${message}]];
+	console.log(message);
+</script>
     <title>Title</title>
 </head>
 <body>
